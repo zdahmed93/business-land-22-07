@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #192440;
+    --secondary-color: #00ffad;
+    --tertiary-color: #292b2c;
+    --quaternary-color: #ffffff;
+}
+
+html {
+    font-size: 10px;
+    font-family: Ubuntu, sans-serif;
+    line-height: 1.5;
+}
+
+/* Write your code below */
+
+/* BANNER START */
+#banner {
+    background-image: url('./images/banner-bg-image.jpg');
+    color: var(--quaternary-color);
+    padding: 6.4rem 0;
+}
+
+#banner p {
+    font-size: 2rem;
+    margin: 2.4rem 0;
+}
+
+#banner header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#banner img {
+    width: 8rem;
+}
+
+#banner a {
+    color: var(--quaternary-color);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.btn {
+    border-radius: 2.2rem;
+    padding: 1.2rem 3rem;
+    margin: 2.4rem 0;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color)
+}
+
+/* BANNER END */
+
+/* PROTECTION START */
+.protection {
+    text-align: center;
+}
+
+.protection .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.protection .cards .card {
+    flex: 1;
+}
+
+.protection h4 {
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.protection h2 {
+    margin: 4.8rem 0;
+}
+
+/* PROTECTION END */
+
+/* FEATURES START */
+.features {
+    margin-top: 7rem;
+}
+
+.features .feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4.5rem 1.5rem;
+    flex-wrap: wrap;
+}
+
+.feature-1-wrapper {
+    background-image: linear-gradient(to bottom right,#ffffff 0% 50%,#00FFAD 50% 100%);
+}
+
+.feature-2-wrapper {
+    background-color: var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+}
+
+.features img {
+    max-width: 50%;
+}
+
+.feature-2 img {
+    order: 1;
+}
+/* FEATURES END */
+
+/* PRICING START */
+.pricing {
+    text-align: center;
+}
+
+.pricing .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem
+}
+
+.pricing .card {
+    background-color: lightgray;
+    border-radius: 0.5rem;
+    padding: 2.4rem 3rem;
+
+}
+
+.pricing .dark {
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+}
+
+.pricing h4 {
+    font-size: 2.4rem;
+}
+
+.pricing span {
+    font-size: 9rem;
+}
+
+.pricing h2 {
+    margin: 4.8rem 0;
+}
+
+.pricing p {
+    padding: 0.5rem 0;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+/* PRICING END */
+
+/* PARTNERS END */
+.partners {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4.8rem 0;
+}
+/* PARTNERS END */
+
+/* CONTACT START */
+#contact {
+    background-image: url('./images/contact-bg-image.jpg');
+    color: var(--quaternary-color);
+    padding: 6.4rem 0;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6rem;
+}
+
+.first-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+input, textarea {
+    background-color: transparent;
+    color: var(--quaternary-color);
+    border: solid 0.1rem var(--secondary-color);
+    border-radius: 0.4rem;
+    outline: none;
+    padding: 0.8rem 1.2rem;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.list-unstyled {
+    list-style: none;
+}
+
+#contact ul {
+    margin-top: 2.5rem;
+}
+
+#contact li {
+    padding: 0.4rem 0;
+}
+/* CONTACT END */
+/* FOOTER START */
+footer {
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    padding: 3.2rem;
+    font-size: 1.6rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-media {
+    display: flex;
+    gap: 2rem
+}
+
+#social-media a {
+    background-color: var(--quaternary-color);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+/* FOOTER END */
+
+
+
+/* Write your code above */
+
+h1 {
+    font-size: 7.2rem;
+    margin: 4.8rem 0;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+p, li, label {
+    font-size: 1.6rem;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.font-weight-light {
+    font-weight: 300;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .feature-2 img {
+    order: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
